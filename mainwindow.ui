@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QToolBox" name="toolBox">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>170</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>6</number>
+      </property>
+      <widget class="QWidget" name="page_1">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>200</width>
+         <height>403</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>图形增强</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>1</number>
+        </property>
+        <item>
+         <widget class="QPushButton" name="Btn_dyanmic">
+          <property name="text">
+           <string>动态范围调整</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="Btn_histEQ">
+          <property name="text">
+           <string>直方图均衡</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>伪彩色增强</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="radioBtn_density">
+             <property name="text">
+              <string>密度分层法</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="radioBun_grey">
+             <property name="text">
+              <string>灰度变换法</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="Btn_preudo_color_enhance">
+             <property name="text">
+              <string>伪彩色</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="maximumSize">
+           <size>
+            <width>150</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>线性对比度展宽</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <property name="rightMargin">
+            <number>4</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="Lab_a">
+             <property name="text">
+              <string>a</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="Edit_a"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="Lab_b">
+             <property name="text">
+              <string>b</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="Edit_b"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="Lab_ga">
+             <property name="text">
+              <string>ga</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="Edit_ga"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="Lab_gb">
+             <property name="text">
+              <string>gb</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="Edit_gb"/>
+           </item>
+           <item row="4" column="0" colspan="2">
+            <widget class="QPushButton" name="Btn_lenar">
+             <property name="text">
+              <string>线性对比度展宽</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>200</width>
+         <height>403</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>图形变换</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_resize">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>11</y>
+          <width>122</width>
+          <height>102</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>缩放</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <item row="0" column="0">
+          <widget class="QLabel" name="Lab_width">
+           <property name="text">
+            <string>宽</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="Edit_width"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="Lab_height">
+           <property name="text">
+            <string>高</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="Edit_height"/>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_resize">
+           <property name="text">
+            <string>缩放</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_resize_2">
+        <property name="geometry">
+         <rect>
+          <x>11</x>
+          <y>138</y>
+          <width>122</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>旋转</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout_3">
+         <item row="0" column="0">
+          <widget class="QLabel" name="Lab_rotationAngle">
+           <property name="text">
+            <string>角度</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="Edit_rotationAngle"/>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_rotation">
+           <property name="text">
+            <string>旋转</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_resize_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>131</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>错切</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="Lab_rotationAngle_2">
+           <property name="text">
+            <string>比率</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="Edit_rotationAngle_2"/>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_rotation_2">
+           <property name="text">
+            <string>水平错切</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>垂直错切</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>200</width>
+         <height>403</height>
+        </rect>
+       </property>
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <attribute name="label">
+        <string>滤波去噪</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>191</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>滤波</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3" columnstretch="1,1">
+         <item row="6" column="0">
+          <widget class="QLabel" name="Lab_cols">
+           <property name="text">
+            <string>邻域column</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QRadioButton" name="radioBtn_Average">
+           <property name="text">
+            <string>均值滤波</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="Lab_rows">
+           <property name="text">
+            <string>邻域row</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="Edit_cols"/>
+         </item>
+         <item row="4" column="0" colspan="2">
+          <widget class="QRadioButton" name="radioBtn_Gauss">
+           <property name="text">
+            <string>高斯滤波</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_deNoisy">
+           <property name="text">
+            <string>去噪</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QRadioButton" name="radioBtn_median">
+           <property name="text">
+            <string>中值滤波</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="Edit_rows"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="pic_sharping">
+       <attribute name="label">
+        <string>图像锐化</string>
+       </attribute>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>151</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="radioBtn_Sobel">
+           <property name="text">
+            <string>sobel</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioBtn_Laplace">
+           <property name="text">
+            <string>Laplace</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioBtm_LaplaceDIY">
+           <property name="text">
+            <string>自定义Laplace</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Btn_sharping">
+           <property name="text">
+            <string>锐化</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_3">
+       <attribute name="label">
+        <string>图像分割</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>193</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>阈值分割</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="4" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_adaptive_threshold">
+           <property name="text">
+            <string>动态阈值</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="Lab_offset">
+           <property name="text">
+            <string>偏移值：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="Lab_wsize">
+           <property name="text">
+            <string>窗口尺寸：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="Lab_threshold">
+           <property name="text">
+            <string>阈值：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="Edit_threshold"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="Edit_offset"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="Edit_wsize"/>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_threshold">
+           <property name="text">
+            <string>固定阈值</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>190</y>
+          <width>191</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>区域生长</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5" columnstretch="1,0">
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="Edit_seedx">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_floodfill">
+           <property name="text">
+            <string>漫水分割</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="Edit_seedy"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="Lab_threshold_rigion">
+           <property name="text">
+            <string>阈值</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="Lab_x">
+           <property name="text">
+            <string>x</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_rigion_group">
+           <property name="text">
+            <string>区域生长</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="Edit_thresh"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="Lab_y">
+           <property name="text">
+            <string>y</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <attribute name="label">
+        <string>二值图像处理</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>191</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>膨胀和腐蚀</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="2" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_Erode">
+           <property name="text">
+            <string>腐蚀</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="Lab_Kernel">
+           <property name="text">
+            <string>KernalSize</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_Dilate">
+           <property name="text">
+            <string>膨胀</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="Edit_Kernel">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_Close">
+           <property name="text">
+            <string>闭运算</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="2">
+          <widget class="QPushButton" name="Btn_Open">
+           <property name="text">
+            <string>开运算</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <attribute name="label">
+        <string>颜色转换</string>
+       </attribute>
+       <widget class="QWidget" name="">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>141</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="radioHSV">
+           <property name="text">
+            <string>HSV</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioXYZ">
+           <property name="text">
+            <string>XYZ</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioYCrCb">
+           <property name="text">
+            <string>YCrCb</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="Btn_ConvertColor">
+           <property name="text">
+            <string>转换</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="minimumSize">
+       <size>
+        <width>512</width>
+        <height>512</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>582</width>
+         <height>569</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLabel" name="Lab_img">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>图像</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actFile_Open"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actFile_Open">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentOpen"/>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
